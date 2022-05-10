@@ -1,0 +1,27 @@
+#spring:
+#cloud:
+#gateway:
+#routes:
+#- id: product-service
+#uri: http://localhost:8084/
+#predicates:
+#- Path=/product/**
+#
+#- id: cart-service
+#uri: http://localhost:8091/
+#predicates:
+#- Path=/**
+##filters:
+##- name: CircuitBreaker
+##args:
+##name: PRODUCT-SERVICE
+##fallbackuri: forward:/ProductServiceFallBackMethod
+#
+##filters:
+##- name: CircuitBreaker
+##args:
+##name: CART-SERVICE
+##fallbackuri: forward:/CartServiceFallBackMethod
+#
+#
+#
