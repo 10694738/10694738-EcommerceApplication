@@ -15,7 +15,6 @@ public class EcommerceServiceApplication {
 		SpringApplication.run(EcommerceServiceApplication.class, args);
 	}
 	@Bean
-	
 	public RestTemplate getRestTemplate() {
 	return new RestTemplate();
 	}
